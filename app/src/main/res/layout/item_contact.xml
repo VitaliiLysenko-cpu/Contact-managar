@@ -24,7 +24,6 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:gravity="center_vertical"
-        android:hint="@string/last_name_hint"
         android:padding="@dimen/padding"
         app:layout_constraintBottom_toTopOf="@+id/sur_name_textView"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,7 +35,6 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:gravity="center_vertical"
-        android:hint="@string/sur_name_hint"
         android:padding="@dimen/padding"
         android:text=""
         app:layout_constraintBottom_toTopOf="@+id/num_phone_textView"
@@ -48,6 +46,7 @@
         android:id="@+id/num_phone_textView"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        
         android:gravity="center_vertical"
         android:hint="@string/number_phone"
         android:padding="@dimen/padding"
@@ -57,16 +56,18 @@
         app:layout_constraintStart_toEndOf="@+id/photo_imageView"
         app:layout_constraintTop_toBottomOf="@+id/sur_name_textView" />
     
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
+    <Button
         android:id="@+id/delete_contact_Button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="37dp"
+        android:layout_height="43dp"
         android:clickable="false"
+        android:drawableTop="@drawable/ic_close_black_24dp"
         android:focusable="true"
-        app:backgroundTint="@color/design_default_color_on_primary"
+        android:gravity="center"
+        app:backgroundTint="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="@+id/sur_name_textView"
         app:layout_constraintEnd_toEndOf="@+id/sur_name_textView"
         app:layout_constraintTop_toBottomOf="@+id/last_name_textView"
-        app:srcCompat="@android:drawable/ic_delete" />
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
