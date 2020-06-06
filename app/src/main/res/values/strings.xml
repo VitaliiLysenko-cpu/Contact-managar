@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Contact Manager</string>
+    <string name="last_name">Last Name</string>
+    <string name="sur_name">Sur Name</string>
+    <string name="email">Email</string>
+    <string name="sur_name_hint">Sur name</string>
+    <string name="last_name_hint">Last name</string>
+    <string name="email_hint">Email</string>
+    <string name="todo">TODO</string>
+    <string name="number_phone">Number phone</string>
+    <string name="phone_number">Phone number</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+</resources>

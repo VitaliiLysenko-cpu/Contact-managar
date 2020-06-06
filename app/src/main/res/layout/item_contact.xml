@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp">
+    
+    
+    <ImageView
+        android:id="@+id/photo_imageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:contentDescription="@string/todo"
+        android:padding="@dimen/padding"
+        app:layout_constraintEnd_toStartOf="@+id/last_name_textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+    
+    <TextView
+        android:id="@+id/last_name_textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:hint="@string/last_name_hint"
+        android:padding="@dimen/padding"
+        app:layout_constraintBottom_toTopOf="@+id/sur_name_textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/photo_imageView"
+        app:layout_constraintTop_toTopOf="@+id/photo_imageView" />
+    
+    <TextView
+        android:id="@+id/sur_name_textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:hint="@string/sur_name_hint"
+        android:padding="@dimen/padding"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/num_phone_textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/photo_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/last_name_textView" />
+    
+    <TextView
+        android:id="@+id/num_phone_textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center_vertical"
+        android:hint="@string/number_phone"
+        android:padding="@dimen/padding"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/photo_imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/photo_imageView"
+        app:layout_constraintTop_toBottomOf="@+id/sur_name_textView" />
+    
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/delete_contact_Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:focusable="true"
+        app:backgroundTint="@color/design_default_color_on_primary"
+        app:layout_constraintBottom_toBottomOf="@+id/sur_name_textView"
+        app:layout_constraintEnd_toEndOf="@+id/sur_name_textView"
+        app:layout_constraintTop_toBottomOf="@+id/last_name_textView"
+        app:srcCompat="@android:drawable/ic_delete" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
