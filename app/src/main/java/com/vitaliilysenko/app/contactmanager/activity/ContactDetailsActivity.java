@@ -36,8 +36,6 @@ public class ContactDetailsActivity extends AppCompatActivity {
         email = findViewById(R.id.email_detail);
         toolbar = findViewById(R.id.toolbar_contact_detail);
         setSupportActionBar(toolbar);
-       // getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-       // getSupportActionBar().setDisplayShowHomeEnabled(true);
         
         toolbar.setNavigationIcon(R.drawable.ic_arrow_back_black_24dp);
         toolbar.setNavigationOnClickListener(v -> {
